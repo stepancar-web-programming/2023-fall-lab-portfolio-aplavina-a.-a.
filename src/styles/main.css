@@ -4,6 +4,7 @@
 :root{
     --gradient: linear-gradient(90deg, rgba(73,1,128,1) 0%, rgba(1,12,128,1) 100%);
     --text-color: #FFFF;
+    --primary-color: #010C80;
 }
 
 html, body{

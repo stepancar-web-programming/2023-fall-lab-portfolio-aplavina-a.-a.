@@ -1,0 +1,10 @@
+.skills-main-title{
+    color: var(--primary-color);
+    font-size: 64px;
+    font-weight: bold;
+    width: 880px;
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}

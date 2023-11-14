@@ -1,4 +1,4 @@
-import './style.css'
+import './footer.css'
 
 import gmailIcon from './../../img/icons/gmail.png'
 import viberIcon from './../../img/icons/viber.png'
