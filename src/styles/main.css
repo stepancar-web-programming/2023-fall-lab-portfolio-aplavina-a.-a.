@@ -15,6 +15,10 @@ html, body{
     color: var(--text-color);
 }
 
+main{
+    min-height: 70vh;
+}
+
 .App {
 	min-height: 100vh;
 	display: flex;
