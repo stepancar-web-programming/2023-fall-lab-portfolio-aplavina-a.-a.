@@ -1,0 +1,44 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --gradient: linear-gradient(90deg, rgba(73,1,128,1) 0%, rgba(1,12,128,1) 100%);
+    --text-color: #FFFF;
+}
+
+html, body{
+    min-height: 100vh;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 21px;
+    color: var(--text-color);
+}
+
+.App {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1312px;
+}
+
+.title-1{
+    font-size: 64px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.title-2{
+    font-size: 41px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.title-3{
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: bold;
+}
