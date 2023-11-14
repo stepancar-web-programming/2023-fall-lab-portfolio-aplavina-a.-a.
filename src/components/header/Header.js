@@ -17,10 +17,8 @@ const Header = () => {
                         </div>
                     </div>
                     <ul className='header-menu'>
-                        {/* <li><a className='header-menu-link' href="!#">Home</a></li> */}
                         <li><NavLink to="/" className='header-menu-link'>Home</NavLink></li>
                         <li><NavLink to="/skills" className='header-menu-link'>Skills</NavLink></li>
-                        {/* <li><a className='header-menu-link' href="!#">Skills</a></li> */}
                     </ul>
                 </div>
             </div>
