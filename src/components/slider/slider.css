@@ -1,0 +1,18 @@
+.slider{
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-image{
+    max-height: 300px;
+    max-width: 270px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.slider-rotate-arrow{
+    transform: rotate(180deg);
+}

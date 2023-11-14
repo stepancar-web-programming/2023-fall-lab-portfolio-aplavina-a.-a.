@@ -1,11 +1,19 @@
+import "./styles/main.css"
+
 import Home from "./pages/home/Home";
 import Skills from "./pages/skills/Skills";
-import "./styles/main.css"
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Skills/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/skills" element={<Skills/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }

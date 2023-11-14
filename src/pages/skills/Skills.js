@@ -10,29 +10,16 @@ import springSkill from './../../img/skills/spring.png';
 import gitSkill from './../../img/skills/git.png';
 import nodeSkill from './../../img/skills/node.png';
 import postgresSkill from './../../img/skills/postgres.svg';
+import Slider from '../../components/slider/Slider';
 
 const Skills = () => {
-    const nextSlide = () => {
-        const slides = document.querySelectorAll('.skills-slider-slide');
-        console.log(slides);
-        slides.forEach((slide, index) => {
-            slide.className = 'skills-slider-slide hide-slide';
-            if(index == slides.length){
-                slides[0].className= 'skills-slider-slide';
-            }
-            else{
-                slides[index+1].className = 'skills-slider-slide';
-            }
-        })
-    }
-
     return (
         <div>
             <Header/>
             <main className="skills-content">
                 <div className='container'>
                     <h2 className="skills-main-title">My skills</h2>
-                    <div className='skills-slider'>
+                    {/* <div className='skills-slider'>
                         <img className="skills-slider-rotate-arrow" src={arrow} alt="arrow left"/>
                         <div className='skills-slider-imgs'>
                             <div className="skills-slider-slide">
@@ -55,7 +42,8 @@ const Skills = () => {
                             </div>
                         </div>
                         <img src={arrow} alt="arrow left" onClick={nextSlide}/>
-                    </div>
+                    </div> */}
+                    <Slider/>
                 </div>
             </main>
             <Footer/>
