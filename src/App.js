@@ -1,17 +1,17 @@
-import "./styles/main.css"
+import './styles/main.css'
 
-import Home from "./pages/home/Home";
-import Skills from "./pages/skills/Skills";
+import Home from './pages/home/Home';
+import Skills from './pages/skills/Skills';
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Router>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/skills" element={<Skills/>}/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/skills' element={<Skills/>}/>
         </Routes>
       </Router>
     </div>

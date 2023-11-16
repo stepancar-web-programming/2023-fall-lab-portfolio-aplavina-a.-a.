@@ -9,7 +9,7 @@ import gitSkill from './../../img/skills/git.png';
 import nodeSkill from './../../img/skills/node.png';
 import postgresSkill from './../../img/skills/postgres.svg';
 
-import { useState } from "react"
+import { useState } from 'react'
 
 const Slider = () => {
 
@@ -35,10 +35,10 @@ const Slider = () => {
         setCurrentIndex(newIndex);
     }
     return (
-        <div class="slider">
-            <img className="slider-rotate-arrow" src={arrow} alt="<" onClick={previousSlide}/>
-            <img className="slide-image" src={slides[currentIndex]}/>
-            <img src={arrow} alt=">" onClick={nextSlide}/>
+        <div className='slider'>
+            <img className='slider-rotate-arrow' src={arrow} alt='<' onClick={previousSlide}/>
+            <img className='slide-image' src={slides[currentIndex]}/>
+            <img src={arrow} alt='>' onClick={nextSlide}/>
         </div>
     );
 }
