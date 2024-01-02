@@ -13,12 +13,12 @@ import { useState } from 'react';
 
 const Slider = () => {
   const slides = [
-    javaSkill,
-    springSkill,
-    dockerSkill,
-    gitSkill,
-    nodeSkill,
-    postgresSkill,
+    { skill: javaSkill, descr: 'Java' },
+    { skill: springSkill, descr: 'Spring framework' },
+    { skill: dockerSkill, descr: 'Docker' },
+    { skill: gitSkill, descr: 'Git' },
+    { skill: nodeSkill, descr: 'Node.js' },
+    { skill: postgresSkill, descr: 'Postgresql' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,16 +33,35 @@ const Slider = () => {
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'ArrowLeft') {
+      previousSlide();
+    } else if (event.key === 'ArrowRight') {
+      nextSlide();
+    }
+  };
+
   return (
-    <div className="slider">
+    <div
+      className="slider"
+      role="region"
+      aria-label="Skills Slider"
+      tabIndex="0"
+      onKeyDown={handleKeyPress}
+    >
       <img
         className="slider-rotate-arrow"
         src={arrow}
-        alt="<"
+        alt="Previous slide"
         onClick={previousSlide}
       />
-      <img className="slide-image" src={slides[currentIndex]} />
-      <img src={arrow} alt=">" onClick={nextSlide} />
+      <img
+        className="slide-image"
+        src={slides[currentIndex].skill}
+        alt={slides[currentIndex].descr}
+      />
+      <img src={arrow} alt="Next slide" onClick={nextSlide} />
     </div>
   );
 };
