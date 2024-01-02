@@ -10,10 +10,10 @@ const Footer = () => {
         <div className="footer-wrapper">
           <p>© All rights blah blah</p>
           <div className="footer-icons">
-            <a href="">
+            <a href="mailto:ffa@somemail.com">
               <img src={viberIcon} alt="viber" />
             </a>
-            <a href="">
+            <a href="mailto:ffa@somemail.com">
               <img src={gmailIcon} alt="gmail" />
             </a>
           </div>
