@@ -16,3 +16,7 @@
 .slider-rotate-arrow {
   transform: rotate(180deg);
 }
+
+.slider img:focus {
+  border: 2px solid red;
+}

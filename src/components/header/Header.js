@@ -24,12 +24,12 @@ const Header = () => {
           </div>
           <ul className="header-menu">
             <li>
-              <NavLink to="/" className="header-menu-link">
+              <NavLink to="/" className="header-menu-link" tabIndex={0}>
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/skills" className="header-menu-link">
+              <NavLink to="/skills" className="header-menu-link" tabIndex={0}>
                 Skills
               </NavLink>
             </li>

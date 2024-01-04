@@ -52,3 +52,7 @@ main {
   line-height: 30px;
   font-weight: bold;
 }
+
+a:focus {
+  border: 2px solid red;
+}

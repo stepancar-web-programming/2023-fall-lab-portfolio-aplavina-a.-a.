@@ -55,13 +55,14 @@ const Slider = () => {
         src={arrow}
         alt="Previous slide"
         onClick={previousSlide}
+        tabIndex={0}
       />
       <img
         className="slide-image"
         src={slides[currentIndex].skill}
         alt={slides[currentIndex].descr}
       />
-      <img src={arrow} alt="Next slide" onClick={nextSlide} />
+      <img src={arrow} alt="Next slide" onClick={nextSlide} tabIndex={0} />
     </div>
   );
 };
