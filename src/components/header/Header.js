@@ -1,4 +1,4 @@
-import './style.css';
+import './header.css';
 
 import photo from '../../img/photo.png';
 
@@ -14,7 +14,7 @@ const Header = () => {
               src={photo}
               width="150"
               height="103"
-              alt="developer photo"
+              alt="developer"
               className="photo"
             />
             <div className="name-title">
