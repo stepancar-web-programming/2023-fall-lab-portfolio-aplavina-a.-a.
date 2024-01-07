@@ -1,0 +1,22 @@
+.slider {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-image {
+  max-height: 300px;
+  max-width: 270px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.slider-rotate-arrow {
+  transform: rotate(180deg);
+}
+
+.slider img:focus {
+  border: 2px solid red;
+}
